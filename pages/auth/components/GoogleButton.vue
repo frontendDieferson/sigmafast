@@ -14,24 +14,24 @@
 </template>
 
 <script setup>
-import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
+//import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
 // ...
 
 
 
-const loginWithGoogle = async () => {
-  const auth = getAuth();
-  const provider = new GoogleAuthProvider();
+// const loginWithGoogle = async () => {
+//   const auth = getAuth();
+//   const provider = new GoogleAuthProvider();
   
-  try {
-    const result = await signInWithPopup(auth, provider);
-    // O usuário foi autenticado com o Google com sucesso
-  } catch (error) {
-    console.error(error);
-    // Lida com erros de autenticação do Google, se houver algum
-  }
-}
+//   try {
+//     const result = await signInWithPopup(auth, provider);
+//     // O usuário foi autenticado com o Google com sucesso
+//   } catch (error) {
+//     console.error(error);
+//     // Lida com erros de autenticação do Google, se houver algum
+//   }
+// }
 
 </script>
 
