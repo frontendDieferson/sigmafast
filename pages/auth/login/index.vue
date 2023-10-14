@@ -48,6 +48,9 @@ import SubmitButton from '../components/SubmitButton.vue';
 import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import {auth} from '../../../firebase'
 import GoogleButton from '../components/GoogleButton.vue';
+import { useRouter } from 'nuxt/app';
+
+const router = useRouter();
 
 let email = ref('')
 let password = ref('')
@@ -56,6 +59,7 @@ let password = ref('')
 const loginButton = () => {
   if (validateForm()) {
     signInWithEmailAndPassword(auth, email.value, password.value);
+    router.push('/dashboard');
   } else {
     ErrorMessagePopup();
   }

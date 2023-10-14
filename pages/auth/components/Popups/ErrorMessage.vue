@@ -5,7 +5,7 @@
     </div>
     <div class="text-red-500 ms-3">
       <span>
-        Email inválido!
+        Email ou senha inválido!
       </span>
     </div>
   </div>

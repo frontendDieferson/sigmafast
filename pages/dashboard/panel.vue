@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Opa</h1>
+    <h1>Painel de Configurações</h1>
   </div>
 </template>
 

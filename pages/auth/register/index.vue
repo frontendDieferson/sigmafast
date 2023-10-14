@@ -57,6 +57,9 @@ import SubmitButton from '../components/SubmitButton.vue';
 import { createUser } from '../../../utils/firebaseUtils.js';
 import ErrorMessage from '../components/Popups/ErrorMessage.vue';
 import GoogleButton from '../components/GoogleButton.vue';
+import { useRouter } from 'nuxt/app';
+
+const router = useRouter();
 
 let name = ref('')
 let email = ref('')
@@ -65,6 +68,7 @@ let password = ref('')
 const registerButton = () => {
   if (validateForm() === true) {
     createUser(name.value,email.value,password.value)
+    router.push('/login');
     console.log('Cadastro com sucesso')
   } else {
     ErrorMessagePopup()
