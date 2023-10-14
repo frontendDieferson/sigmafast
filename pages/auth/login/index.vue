@@ -45,12 +45,13 @@ import TemplateAuth from '../components/TemplateAuth.vue';
 import InputEmail from '../components/InputEmail.vue';
 import InputPassword from '../components/InputPassword.vue'
 import SubmitButton from '../components/SubmitButton.vue';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import {auth} from '../../../firebase'
 import GoogleButton from '../components/GoogleButton.vue';
 
 let email = ref('')
 let password = ref('')
+
 
 const loginButton = () => {
   if (validateForm()) {

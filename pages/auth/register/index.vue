@@ -64,7 +64,7 @@ let password = ref('')
 
 const registerButton = () => {
   if (validateForm() === true) {
-    //createUser(name.value,email.value,password.value)
+    createUser(name.value,email.value,password.value)
     console.log('q9euibf')
   } else {
     ErrorMessagePopup()

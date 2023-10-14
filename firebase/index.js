@@ -3,16 +3,17 @@ import { getFirestore } from 'firebase/firestore'
 import { getAuth } from "firebase/auth";
 
 export const firebaseConfig = initializeApp({
-  apiKey: "AIzaSyDtUKwxlX3GtEpthUZWWW2Jf9sdkBaW8Zw",
-  authDomain: "reservouapp.firebaseapp.com",
-  projectId: "reservouapp",
-  storageBucket: "reservouapp.appspot.com",
-  messagingSenderId: "704822031117",
-  appId: "1:704822031117:web:1de763ba3e9e13cd9db644",
-  measurementId: "G-KVMLBH41MF"
+  apiKey: "AIzaSyAkaDqA3fdZELFfx3GauarOVxVEOKHzPJA",
+  authDomain: "sigmafast-c9433.firebaseapp.com",
+  projectId: "sigmafast-c9433",
+  storageBucket: "sigmafast-c9433.appspot.com",
+  messagingSenderId: "75052118231",
+  appId: "1:75052118231:web:c896443edeafb1c6cb8092",
+  measurementId: "G-GE81KJF1X6"
 })
 
 export const auth = getAuth(firebaseConfig)
 
 export const db = getFirestore(firebaseConfig)
 
+//export const analytics = getAnalytics(app);
