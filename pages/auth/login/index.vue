@@ -56,6 +56,8 @@ let password = ref('')
 const loginButton = () => {
   if (validateForm()) {
     signInWithEmailAndPassword(auth, email.value, password.value);
+  } else {
+    ErrorMessagePopup();
   }
 }
 
@@ -80,7 +82,7 @@ const validateForm = () => {
     emailInputError.value = 'Email inválido'
   }
 
-  else if (email.value.length > 30) {
+  else if (email.value.length > 50) {
     emailInputError.value = 'Máximo de 30 caracteres'
   }
 

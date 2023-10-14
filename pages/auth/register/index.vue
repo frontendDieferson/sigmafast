@@ -65,7 +65,7 @@ let password = ref('')
 const registerButton = () => {
   if (validateForm() === true) {
     createUser(name.value,email.value,password.value)
-    console.log('q9euibf')
+    console.log('Cadastro com sucesso')
   } else {
     ErrorMessagePopup()
   }
@@ -120,7 +120,7 @@ const validateForm = () => {
     emailInputError.value = 'Email inválido'
   }
 
-  else if (email.value.length > 30) {
+  else if (email.value.length > 50) {
     emailInputError.value = 'Máximo de 30 caracteres'
   }
 
